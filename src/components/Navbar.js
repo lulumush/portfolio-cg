@@ -1,9 +1,9 @@
 import React from "react"
 
-function Header() {
+function Navbar() {
 	return (
-		<div>Header</div>
+		<div>NavBar</div>
 	)
 }
 
-export default Header
+export default Navbar

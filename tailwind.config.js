@@ -4,9 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      main: 'Dosis',
+      title: 'Rozha One',
+    },
     extend: {
       backgroundImage: {
-        hero: "url('/src/assets/hero.jpg')",
+        hero: "url('/src/assets/hero1.jpg')",
       },
     },
   },
