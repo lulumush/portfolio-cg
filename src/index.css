@@ -7,8 +7,11 @@
     @apply font-main text-[20px] text-zinc-900;
   }
   h1 {
-    @apply font-title text-[80px] lg:text-[120px];
+    @apply font-title p-0 text-[80px] lg:text-[120px];
   }
+}
+
+@layer components {
   .btn{
     @apply flex uppercase items-center font-medium gap-x-[10px] mx-auto px-4 py-2 border border-white/70 hover:bg-white hover:text-zinc-900 transition-all duration-500;
   }
