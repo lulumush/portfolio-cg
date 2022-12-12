@@ -5,12 +5,12 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      main: 'Dosis',
-      title: 'Rozha One',
+      'main': 'Dosis',
+      'title': 'Rozha One',
     },
     extend: {
       backgroundImage: {
-        hero: "url('/src/assets/hero1.jpg')",
+        'hero': "url('/src/assets/hero1.jpg')",
       },
     },
   },

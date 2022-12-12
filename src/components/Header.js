@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import {FaBars, FaTimes} from "react-icons/fa"
 import NavMobile from "./NavMobile"
+import NavDesktop from "./NavDesktop"
 
 function Header() {
 	//Header state
@@ -24,6 +25,10 @@ function Header() {
 				{/* Nav mobile - show by default - hidden on desktop */}
 				<div className={`${click ? "left-0" : "-left-full"} fixed lg:hidden bg-white/90 top-0 w-full h-full -z-10 transition-all duration-500`}>
 					<NavMobile />
+				</div>
+				{/* Nav Desktop - hidden by default - show on desktop */}
+				<div className="hidden lg:flex">
+					<NavDesktop />
 				</div>
 			</div>
 		</header>
