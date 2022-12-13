@@ -16,20 +16,7 @@ function App() {
 				<About />
 				<Gallery />
 				<Contact />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				<Footer />
-				
+				<Footer />				
 			</main>
 		</>
 

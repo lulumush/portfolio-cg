@@ -22,7 +22,7 @@ const heroText = {
 
 function Hero() {
 	return (
-		<section className="bg-hero bg-cover bg-center h-[70vh] bg-no-repeat relative mt-[100px]">
+		<section className="bg-hero bg-cover bg-center h-[90vh] bg-no-repeat relative mt-[100px]">
 			<div className="container mx-auto h-full flex items-center justify-center">
 				<motion.div	
 					variants={heroText}
@@ -30,8 +30,8 @@ function Hero() {
 					whileInView={"show"} 
 					className="text-white text-center">
 					
-					<h1>Céline Galipaud</h1>
-					<p className="text-[30px] lg:text-[50px] mb-4">Photographe de mariages</p>
+					<h1 className="mb-12">Céline Galipaud</h1>
+					<p className="text-[30px] lg:text-[50px] mb-14">Photographe de mariages</p>
 					<button className="btn">Contactez-moi <div>{<IoMdArrowForward />}</div></button>
 				</motion.div>
 			</div>

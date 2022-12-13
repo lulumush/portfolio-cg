@@ -7,7 +7,10 @@
     @apply font-main text-[20px] text-zinc-900;
   }
   h1 {
-    @apply font-title p-0 text-[70px] lg:text-[120px];
+    @apply font-title text-[70px] lg:text-[120px] leading-none;
+  }
+  h2 {
+    @apply font-title text-[50px] mb-[30px] lg:text-[90px] leading-none;
   }
 }
 
