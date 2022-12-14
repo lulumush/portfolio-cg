@@ -12,6 +12,9 @@
   h2 {
     @apply font-title text-[50px] mb-[30px] lg:text-[90px] leading-none;
   }
+  #about, #portfolio{
+    @apply pt-[80px];
+  }
 }
 
 @layer components {

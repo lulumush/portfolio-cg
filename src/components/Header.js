@@ -15,7 +15,7 @@ function Header() {
 	})
 
 	return (
-		<header className={`${isScrolled ? "h-[80px]" : "h-[100px]"} fixed left-0 top-0 w-full z-10 mx-auto px-6 lg:px-10 bg-white transition-all duration-500`}>
+		<header className={`${isScrolled ? "h-[80px]" : "h-[100px]"} fixed left-0 top-0 w-full z-10 mx-auto px-6 lg:px-10 shadow-lg bg-white transition-all duration-500`}>
 			<div className="flex items-center justify-between h-full">
 				<a href="/" className="font-title text-[50px] font-medium relative">CG</a>
 				{/* Nav button - show by default - hidden on desktop */}
