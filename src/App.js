@@ -1,6 +1,6 @@
 import React from "react"
 
-import Header from "./components/Header"
+import NavBar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Portfolio from "./components/Portfolio"
@@ -10,7 +10,10 @@ import Footer from "./components/Footer"
 function App() {
 	return (
 		<>
-			<Header />
+			<header>
+				<NavBar />
+			</header>
+			
 			<main>
 				<Hero />
 				<About />

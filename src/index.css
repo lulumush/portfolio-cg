@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html{
+    @apply scroll-smooth;
+  }
   body {
     @apply font-main text-[20px] text-zinc-900;
   }
@@ -20,6 +23,12 @@
 @layer components {
   .btn{
     @apply flex uppercase items-center font-medium gap-x-[10px] mx-auto px-4 py-2 border border-white/70 hover:bg-white hover:text-zinc-900 transition-all duration-500;
+  }
+  .nav-menu{
+    @apply bg-pink-500 fixed left-[-100%] top-[100px] w-full h-[90vh] transition-all duration-500;
+  }
+  .nav-menu.active{
+    @apply bg-green-500 left-0;
   }
   .nav-items{
     @apply uppercase font-bold hover:border-b-[2px] hover:border-zinc-900;
