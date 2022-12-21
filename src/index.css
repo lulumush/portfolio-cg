@@ -15,7 +15,7 @@
   h2 {
     @apply font-title text-[50px] mb-[30px] lg:text-[90px] leading-none;
   }
-  #about, #portfolio{
+  .section{
     @apply pt-[80px];
   }
 }

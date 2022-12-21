@@ -38,7 +38,7 @@ function About() {
 	// about datas
 	const { title, subtitle1, subtitle2 } = aboutData
 	return (
-		<section id="about" className='px-[30px]'>
+		<section id="about" className='section px-[30px]'>
 			<div className='max-w-[1140px] mx-auto flex flex-col items-center lg:flex-row'>
 				<div className='flex-1'>
 					<motion.h2

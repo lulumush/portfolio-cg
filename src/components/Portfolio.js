@@ -30,7 +30,7 @@ function Gallery() {
 	})
 
 	return (
-		<section id="portfolio">
+		<section id="portfolio" className="section">
 			<motion.div	
 				variants={galleryAnimate}
 				initial="hidden"
