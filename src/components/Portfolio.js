@@ -38,7 +38,11 @@ function Gallery() {
 				<PhotoAlbum 
 					layout="columns" 
 					photos={images} 
-					columns={windowWidth < 900 ? 2 : 3 }/>
+					columns={(containerWidth) => {
+						if (windowWidth < 500) return 1;
+						if (windowWidth < 900) return 2;
+						return 3;
+					}}/>
 			</motion.div>
 		</section>
 	)
