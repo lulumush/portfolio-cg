@@ -22,7 +22,7 @@
 
 @layer components {
   .btn{
-    @apply flex uppercase items-center font-medium gap-x-[10px] mx-auto px-4 py-2 border border-white/70 hover:bg-white hover:text-zinc-900 transition-all duration-500;
+    @apply flex uppercase items-center font-medium gap-x-[10px] mx-auto px-4 py-2 border transition-all duration-500;
   }
   .nav-menu{
     @apply bg-pink-500 fixed left-[-100%] top-[100px] w-full h-[90vh] transition-all duration-500;

@@ -32,7 +32,7 @@ function Hero() {
 					
 					<h1 className="mb-12">Céline Galipaud</h1>
 					<p className="text-[30px] lg:text-[50px] mb-14">Photographe de mariages</p>
-					<button className="btn">Contactez-moi <div>{<IoMdArrowForward />}</div></button>
+					<button className="btn hover:bg-white hover:text-zinc-900 border-white/70">Contactez-moi <div>{<IoMdArrowForward />}</div></button>
 				</motion.div>
 			</div>
 		</section>
