@@ -3,36 +3,9 @@ import React from 'react';
 import { aboutData } from '../datas/datas';
 // import motion
 import { motion } from 'framer-motion';
+//import animation variants
+import { animationVariants } from "../animation"
 
-const aboutTextLeft = {
-	hidden: {
-		x: -100,
-		opacity: 0,
-	},
-	show: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			type: 'tween',
-			duration: 1.4,
-		},
-	},
-}
-
-const aboutTextRight = {
-	hidden: {
-		x: 100,
-		opacity: 0,
-	},
-	show: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			type: 'tween',
-			duration: 1.4,
-		},
-	},
-}
 
 function About() {
 	// about datas
@@ -42,13 +15,13 @@ function About() {
 			<div className='max-w-[1140px] mx-auto flex flex-col items-center lg:flex-row'>
 				<div className='flex-1'>
 					<motion.h2
-						variants={aboutTextLeft}
+						variants={animationVariants("left")}
 						initial="hidden"
 						whileInView={"show"} >
 						{title}
 					</motion.h2>
 					<motion.div
-						variants={aboutTextRight}
+						variants={animationVariants("right")}
 						initial="hidden"
 						whileInView={"show"}
 						className='flex flex-col items-end'>

@@ -3,43 +3,15 @@ import React from "react"
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"
 // import motion
 import { motion } from 'framer-motion';
-
-const textLeft = {
-	hidden: {
-		x: -100,
-		opacity: 0,
-	},
-	show: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			type: 'tween',
-			duration: 1.4,
-		},
-	},
-}
-
-const textRight = {
-	hidden: {
-		x: 100,
-		opacity: 0,
-	},
-	show: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			type: 'tween',
-			duration: 1.4,
-		},
-	},
-}
+//import animation variants
+import { animationVariants } from "../animation";
 
 function Contact() {
 	return (
 		<section id="contact" className="section px-[30px] pb-[80px]">
 			<div className="max-w-[1140px] mx-auto w-full">
 				<motion.div 
-					variants={textLeft}
+					variants={animationVariants("left")}
 					initial="hidden"
 					whileInView={"show"}>
 					<h2>Contact :</h2>
@@ -47,7 +19,7 @@ function Contact() {
 				</motion.div>
 				<div className="flex flex-col lg:flex-row lg:justify-between">
 					<motion.div 
-						variants={textLeft}
+						variants={animationVariants("left")}
 						initial="hidden"
 						whileInView={"show"}
 						className="flex flex-col gap-y-4 mt-14 py-4 w-full">
@@ -65,7 +37,7 @@ function Contact() {
 						</div>
 					</motion.div>
 					<motion.div 
-						variants={textRight}
+						variants={animationVariants("right")}
 						initial="hidden"
 						whileInView={"show"}
 						className="mt-14 w-full">

@@ -1,23 +1,10 @@
 import React from "react"
+//import icon
 import {IoMdArrowForward } from "react-icons/io"
-
 //import motion
 import {motion} from "framer-motion"
-
-const heroText = {
-	hidden: {
-		y:-100,
-		opacity:0,
-	},
-	show: {
-	  y:0,
-	  opacity:1,
-	  transition: {
-        type: 'tween',
-        duration: 1.4,
-      },
-	},
-}
+//import animation variants
+import { animationVariants } from "../animation"
 
 
 function Hero() {
@@ -25,7 +12,7 @@ function Hero() {
 		<section className="bg-hero bg-cover bg-center h-[90vh] bg-no-repeat relative mt-[100px]">
 			<div className="container mx-auto h-full flex items-center justify-center">
 				<motion.div	
-					variants={heroText}
+					variants={animationVariants("down")}
 					initial="hidden"
 					whileInView={"show"} 
 					className="text-white text-center">

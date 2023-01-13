@@ -1,23 +1,13 @@
 import React, { useState, useEffect } from "react"
 //import gallery data
-import { galleryData } from '../datas/datas';
+import { galleryData } from '../datas/datas'
 //import react photo album
-import { PhotoAlbum } from "react-photo-album";
+import { PhotoAlbum } from "react-photo-album"
 //import motion
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
+//import animation variants
+import { animationVariants } from "../animation"
 
-const galleryAnimate = {
-	hidden: {
-		opacity:0,
-	},
-	show: {
-	  opacity:1,
-	  transition: {
-        type: 'tween',
-        duration: 1.4,
-      },
-	},
-}
 
 function Gallery() {
 	const {images} = galleryData
@@ -32,8 +22,8 @@ function Gallery() {
 	return (
 		<section id="portfolio" className="section">
 			<motion.div	
-				variants={galleryAnimate}
-				initial="hidden"
+				variants={animationVariants()}
+				initial={"hidden"}
 				whileInView={"show"} >
 				<PhotoAlbum 
 					layout="columns" 
