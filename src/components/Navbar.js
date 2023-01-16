@@ -27,7 +27,7 @@ function Header() {
 				<div className={`${click ? "left-0" : "-left-full"} fixed bg-white/90 lg:hidden top-0 w-full h-full -z-10 transition-all duration-500`}>
 					<nav className="w-full h-full flex justify-center overflow-hidden pt-[150px]">
 						<ul className="flex flex-col items-center gap-y-10 text-2xl font-bold">
-							<li><a className="nav-items" href="/" onClick={closeMenu}>Accueil</a></li>
+							<li><a className="nav-items" href={process.env.PUBLIC_URL} onClick={closeMenu}>Accueil</a></li>
 							<li><a className="nav-items" href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
 							<li><a className="nav-items" href="#contact" onClick={closeMenu}>Contact</a></li>
 						</ul>
@@ -37,7 +37,7 @@ function Header() {
 				<div className="hidden lg:flex">
 					<nav>
 						<ul className="flex gap-x-10">
-							<li><a className="nav-items" href="/">Accueil</a></li>
+							<li><a className="nav-items" href={process.env.PUBLIC_URL}>Accueil</a></li>
 							<li><a className="nav-items" href="#portfolio">Portfolio</a></li>
 							<li><a className="nav-items" href="#contact">Contact</a></li>
 						</ul>
