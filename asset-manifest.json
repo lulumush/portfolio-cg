@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/portolio-cg/static/css/main.e333a7ff.css",
+    "main.css": "/portolio-cg/static/css/main.5194dd00.css",
     "main.js": "/portolio-cg/static/js/main.a92c3b31.js",
-    "static/media/hero.jpg": "/portolio-cg/static/media/hero.c9796b9b9e839a62df83.jpg",
     "static/media/5.jpg": "/portolio-cg/static/media/5.6a89ff400b278e04a15c.jpg",
     "static/media/2.jpg": "/portolio-cg/static/media/2.96068c9c576c65d911ad.jpg",
     "static/media/3.jpg": "/portolio-cg/static/media/3.fb2912560e62a211c6a7.jpg",
@@ -10,13 +9,14 @@
     "static/media/7.jpg": "/portolio-cg/static/media/7.dc129bc8f243f7c5e3a3.jpg",
     "static/media/6.jpg": "/portolio-cg/static/media/6.cad5ad50b9fa27a561b8.jpg",
     "static/media/1.jpg": "/portolio-cg/static/media/1.5052045f17824af0070c.jpg",
+    "static/media/hero.jpg": "/portolio-cg/static/media/hero.d4156229607ccf146d73.jpg",
     "static/media/4.jpg": "/portolio-cg/static/media/4.2811f7975d609233d39e.jpg",
     "index.html": "/portolio-cg/index.html",
-    "main.e333a7ff.css.map": "/portolio-cg/static/css/main.e333a7ff.css.map",
+    "main.5194dd00.css.map": "/portolio-cg/static/css/main.5194dd00.css.map",
     "main.a92c3b31.js.map": "/portolio-cg/static/js/main.a92c3b31.js.map"
   },
   "entrypoints": [
-    "static/css/main.e333a7ff.css",
+    "static/css/main.5194dd00.css",
     "static/js/main.a92c3b31.js"
   ]
 }
