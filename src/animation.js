@@ -1,6 +1,5 @@
 export const animationVariants = (direction) => {
     return{
-
         hidden: {
             x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
             y: direction === "up" ? 100 : direction === "down" ? -100 : 0,

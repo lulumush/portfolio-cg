@@ -1,5 +1,7 @@
 import React from "react"
+//import icons
 import { FaInstagram, FaFacebookF } from "react-icons/fa"
+
 
 function Footer() {
 	return (
@@ -9,7 +11,6 @@ function Footer() {
 			<p><a href="https://www.instagram.com/celinegalipaud_wedding/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></p>
 			<p><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></p>
 			</div>
-			
 		</footer>
 	)
 }

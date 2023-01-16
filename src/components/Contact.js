@@ -6,10 +6,15 @@ import { motion } from 'framer-motion';
 //import animation variants
 import { animationVariants } from "../animation";
 
+
 function Contact() {
+	const sendMail = (e) => {
+		e.preventDefault()
+	}
 	return (
-		<section id="contact" className="section px-[30px] pb-[80px]">
+		<section id="contact" className="section px-[30px] pb-[80px] overflow-hidden">
 			<div className="max-w-[1140px] mx-auto w-full">
+				{/* contact title + animation */}
 				<motion.div 
 					variants={animationVariants("left")}
 					initial="hidden"
@@ -18,6 +23,7 @@ function Contact() {
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 				</motion.div>
 				<div className="flex flex-col lg:flex-row lg:justify-between">
+					{/* contact informations + animation */}
 					<motion.div 
 						variants={animationVariants("left")}
 						initial="hidden"
@@ -36,6 +42,7 @@ function Contact() {
 							<span>contact@contact.com</span>
 						</div>
 					</motion.div>
+					{/* contact form + animation */}
 					<motion.div 
 						variants={animationVariants("right")}
 						initial="hidden"
@@ -45,7 +52,7 @@ function Contact() {
 							<input className="border-b border-dark placeholder:text-[#555] italic tracking-wider pb-2" placeholder="Votre nom" type="text" />
 							<input className="border-b border-dark placeholder:text-[#555] italic tracking-wider pb-2" placeholder="Votre adresse e-mail" type="email" />
 							<input className="border-b border-dark placeholder:text-[#555] italic tracking-wider pb-2" placeholder="Votre message" type="text" />
-							<button className="btn bg-zinc-900 text-white hover:bg-zinc-900/90">Envoyer</button>
+							<button className="btn bg-zinc-900 text-white hover:bg-zinc-900/90" onClick={sendMail}>Envoyer</button>
 						</form>
 					</motion.div>
 				</div>

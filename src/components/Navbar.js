@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react"
+//import icons
 import { FaBars, FaTimes } from "react-icons/fa"
 
+
 function Header() {
-	//Header state
+	//window scroll and menu items click state
 	const [isScrolled, setIsScrolled] = useState(false)
 	const [click, setClick] = useState(false)
 	const closeMenu = () => setClick(false)

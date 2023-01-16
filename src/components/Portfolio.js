@@ -13,6 +13,7 @@ function Gallery() {
 	const {images} = galleryData
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
+	//collect window size for photo album display
 	useEffect(() => {
 		window.addEventListener("resize", () => {
 			setWindowWidth(window.innerWidth)
@@ -21,10 +22,12 @@ function Gallery() {
 
 	return (
 		<section id="portfolio" className="section">
+			{/* photo album animation */}
 			<motion.div	
 				variants={animationVariants()}
 				initial={"hidden"}
 				whileInView={"show"} >
+				{/* photos display according to screen size */}
 				<PhotoAlbum 
 					layout="columns" 
 					photos={images} 
